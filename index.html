@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <nav class="nav">
+
+        <img src="#" width="100%" height="80px">
+        
+        <div class="menu">
+            <button id="Bhome" onclick="IntoHome()">Home</button>
+            <button id="Bolimp" onclick="IntoOlimpiadas()">Olimpíadas</button>
+            <button id="Bqui" onclick="IntoQuizzes()">Quizzes</button>
+            <button id="Bchat" onclick="IntoChat()">Chat</button>
+            <button id="Bexp" onclick="IntoExposicao()">Exposição</button>
+        </div>
+        <img src="#" width="200px" height="220px">
+    </nav>
+
+    <div class="Tela">
+        <div class="welcome">
+            <img id="imf" class="imagemFundo" src="ImagemIlustrativa2.png" width="100%" height="100%">
+
+            
+            <div class="ct">
+                <h1>Conheça o NOE!</h1>
+                <br>
+                <h2>Nosso Núcleo Olímpico Estudantil</h2>
+                <br>
+                <p>Acesse aulas online, resumos, questões, exponha trabalhos e muito mais. Tudo que você precisa para arrasar nas provas.</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="Tela">
+        <div class="imgtop">
+            <img id="imgtitle" src="#" width="100%" height="100%">            
+        </div>
+
+        <div class="caixa_olimpiadas">
+
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+            <div class="card">
+                <a onclick="IntoOlimp1()"> <img src="#" width="320px" height="320px"> </a>
+            </div>
+            
+
+        </div>
+
+    </div>
+
+    <div class="Tela"> 
+
+    </div>
+    
+    <div class="Tela"> 
+        
+    </div>
+    
+    <div class="Tela"> 
+        
+    </div>
+
+    <!-- ########### Vídeos ########### -->
+    <div class="Tela">
+        <div class="imgtop">
+            <img id="imgtitle" src="#" width="100%" height="100%">            
+        </div>
+
+        <div class="videotela">
+            
+            <br>
+            <br>
+            <a onclick="IntoOlimpiadas()" class="voltar">◂ Voltar</a>
+            <br>
+            <br>
+
+            <header class="videos">
+                <div class="video_play">
+                    <!--<embed src="VID-20230504-WA0033.mp4">-->
+                    <!--<iframe id="videoaula" src="VID-20230504-WA0033.mp4" allowfullscreen allow="accelerometer; microphone" 
+                        height="370px" width="650px">
+                    </iframe>-->
+                    <video id="videoaula" src="VID-20230504-WA0033.mp4" width="650px" height="370px" controls>
+                        <source src="VID-20230504-WA0033.mp4" type="video/mp4">
+                    </video>
+                    <br>
+                    <br>
+                    <div class="interation">
+                        <form>
+                            <input id="coment" placeholder="Deixe um comentário...">
+                        </form>
+                        <div>
+                            <button> <img src="deslike.png" width="30px" height="30px"> </button>
+                            <button> <img src="like.png" width="30px" height="30px"> </button>
+                        </div>
+        
+                    </div>
+                    <br>
+                    <button id="sc">Mostrar comentários</button>
+                </div>
+
+                <div class="listvideo">
+                    <div class="vid" onclick="Aula1Olimp1()">
+                        <img src="iconplay.png">
+                        <section>
+                            <h2>Aula 1</h2>
+                            <h1> Conteúdo tal</h1>
+                            <p>Professor fulano</p>
+                        </section>
+                    </div>  
+                    <div class="vid" onclick="Aula2Olimp1()">
+                        <img src="iconplay.png">
+                        <section>
+                            <h2>Aula 2</h2>
+                            <h1> Conteúdo tal</h1>
+                            <p>Professor fulano</p>
+                        </section>
+                    </div>  
+                    <div class="vid">
+                        <img src="iconplay.png">
+                        <section>
+                            <h2>Aula 1</h2>
+                            <h1> Conteúdo tal</h1>
+                            <p>Professor fulano</p>
+                        </section>
+                    </div>  
+                    <div class="vid">
+                        <img src="iconplay.png">
+                        <section>
+                            <h2>Aula 1</h2>
+                            <h1> Conteúdo tal</h1>
+                            <p>Professor fulano</p>
+                        </section>
+                    </div>  
+                    <div class="vid">
+                        <img src="iconplay.png">
+                        <section>
+                            <h2>Aula 1</h2>
+                            <h1> Conteúdo tal</h1>
+                            <p>Professor fulano</p>
+                        </section>
+                    </div>  
+                </div>
+                
+            </header>
+            <br>
+            <hr width="97%">
+
+            <br>
+            <br>
+
+            <div class="description">
+                
+                <h1 id="titleAula">Conteúdo tal - Matéria/olimpíada tal</h1>
+                <br>
+                <br>
+                <p id="descript">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste accusantium, maiores vero aliquam 
+                    veniam hic, iure illo suscipit eveniet inventore fugit porro doloribus fugiat ex rerum molestias 
+                    voluptatibus necessitatibus.</p>
+                <br>
+                
+                <h2 id="autoria">Professor fulano - instituição tal.</h2>
+                
+                <br>
+                <br>
+                <a id="material" href="file:///C:/Users/alisson/Desktop/Plataforma/MODELOS DCUMENTOS OMIF 2024.pdf" target="_blank" download="MODELOS DCUMENTOS OMIF 2024.pdf">Material didático</a>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="stj.js">   </script>
+
+</body>
+</html>

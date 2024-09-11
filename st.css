@@ -1,0 +1,358 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    padding-left: 240px;
+    padding-bottom: 50px;
+}
+
+
+body::-webkit-scrollbar{
+    width: 10px;
+}
+body::-webkit-scrollbar-button{
+    display: none;
+}
+body::-webkit-scrollbar-track{
+    background-color: rgb(0, 0, 0, 0);
+}
+body::-webkit-scrollbar-thumb{
+    border-radius: 50px;
+    background-color: rgb(175, 175, 175, 0.6);
+}
+
+.Tela{
+    padding: 0;
+}
+
+.sumir{
+    display: none;
+}
+
+.nav{
+    display: flex;
+    flex-direction: column;
+    width: 240px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1 px solid black;
+    gap: 10px;
+    align-items: center;
+    background: linear-gradient(#003a66, #004c86, #0074cc);
+    z-index: 10000000;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: fit-content;
+    gap: 0;
+}
+.menu button{
+    width: 100%;
+    height: 55px;
+    text-align: start;
+    text-indent: 40px;
+    border: none;
+    color: rgb(218, 218, 218);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: transparent;
+}
+.menu button:hover,
+.btclick{
+    background: linear-gradient(90deg, #003a66, #004c86, #0074cc);
+}
+
+/* Home page */
+
+.welcome{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.imagemFundo{   
+    width: 82.4%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 240px;
+}
+
+/*#########################################
+@keyframes aniF1{
+    0%{
+        filter: contrast(0%);
+    }
+    100%{
+        filter:contrast(100%);
+    }
+}
+@keyframes aniF2{
+    0%{
+        filter: contrast(100%);
+    }
+    100%{
+        filter: contrast(0%);
+    }
+}
+*/
+
+.ct{
+    background: linear-gradient(90deg, black, rgba(0, 0, 0, 0.829), rgba(0, 0, 0, 0.63), rgba(0, 0, 0, 0.349), rgba(0, 0, 0, 0));
+    height: 100%;
+    width: 600px;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 240px;
+    padding-left: 40px;
+    flex-direction: column;
+    
+}
+.ct h1{
+    font-size: 70px;
+    font-family: sans-serif;
+    color: white;
+    font-weight: 700;
+    text-shadow: 1px 1px 2px black;
+}
+.ct h2 {
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    color: white;
+    text-shadow: 1px 1px 2px black;
+}
+.ct p{
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 200;
+    color: white;    
+    text-shadow: 1px 1px 2px black;
+}
+
+
+/* Olimpiadas page */
+
+
+.imgtop{
+    width: 100% ;
+    box-shadow: 0px 1px 8px rgb(153, 153, 153);
+    height: 200px;
+    overflow: hidden;   
+}
+
+.caixa_olimpiadas{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 320px 320px 320px ;
+    grid-template-rows: 320px 320px;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    
+}
+.card{
+    width: 320px;
+    height: 320px;
+    background-color: white;
+    border: 1px solid gray;
+    cursor: pointer;
+    
+}
+
+    /* Vídeos */
+
+.videotela{
+    padding-left: 80px;
+}
+
+
+.voltar{
+    color: #0074cc;
+    font-family: arial;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: underline rgb(0, 0, 0, 0);    
+    cursor: pointer;
+}
+.voltar:hover{
+    text-decoration: underline;
+}
+.videos{
+    display: flex;
+    width: 97%;
+    height: fit-content;
+    justify-content: space-between;
+    
+}
+.video_play{
+    width: fit-content;
+    justify-content: center;
+    align-items: end;
+    
+}
+.video_play video{
+    border: 1px solid rgb(104, 104, 104);
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(104, 104, 104);
+    background-color: black;
+}
+
+
+.interation{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 100%;
+}
+
+.video_play form input{
+    width: 500px;
+    height: 40px;
+    padding: 8px;
+    font-size: 16px;
+    color: rgb(70, 70, 70);
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid gray;
+    border-radius: 50px;
+}
+#sc,
+.description a{
+    border: none;
+    background-color: transparent;
+    font-size: 17px;
+    color: #003a66;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    cursor: pointer; 
+}
+.description a{
+    border: 1px solid #003a66;
+    padding: 8px 5px;
+    text-decoration: none;
+    background-color: white;
+    border-radius: 5px;
+}
+.description a:hover{
+    background-color: #003a66;
+    color: white;
+}
+
+#sc:hover{
+    text-decoration: underline;
+}
+.video_play .interation button{
+    border-radius: 70%;
+    background-color: transparent; 
+    float: right;
+    width: 34px;
+    height: 34px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    border: 1px solid gray;
+    cursor: pointer;
+}
+.video_play button:hover{
+    background-color: #a2d7ff;
+}
+
+.listvideo{
+    width: 300px;
+    height: 370px;
+    gap: 0;
+    background-color: white;
+    overflow-y: scroll;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px rgb(104, 104, 104);
+    border-radius: 5px;
+    
+}
+
+.listvideo::-webkit-scrollbar-button{
+    display: none;
+}
+.listvideo::-webkit-scrollbar{
+    width: 8px;
+}
+.listvideo::-webkit-scrollbar-thumb{
+    background-color: rgb(175, 175, 175, 0.6);
+    border-radius: 50px;
+}
+.vid{
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid gray;
+    color: rgb(30, 30, 30);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding-left: 15px;
+    cursor: pointer;
+}
+.vid:hover{
+    background-color: rgb(224, 224, 224);
+}
+
+
+.vid img{
+    width: 60px;
+    height: 60px;
+}
+.vid section{
+    justify-content: center;
+    align-items: start;
+}
+.vid section h1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: rgb(70, 70, 70);
+}
+.vid section h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #5c9ac9;
+}
+.vid section p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: gray;
+    font-size: 14px;
+}
+
+.description{
+    width: 97%;
+    height: fit-content;
+
+    
+}
+.description h1{
+    color:rgb(30, 30, 30);
+    font-size: 19px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.description p{
+    color: rgb(104, 104, 104);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    text-align: justify;
+    width: 600px;
+}
+.description h2{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    color:rgb(70, 70, 70);
+}
