@@ -10,7 +10,7 @@ function Aula1Olimp1(){
     document.getElementById('titleAula').innerHTML = "Aula 1 - Conteúdo tal 1";
     document.getElementById('descript').innerHTML = "Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore iste accusantium, maiores vero aliquam veniam hic, iure illo suscipit eveniet inventore fugit porro doloribus fugiat ex rerum molestias voluptatibus necessitatibus.";
     document.getElementById('autoria').innerHTML = "Professor fulano - Intituição Tal1";
-    material.href = "file:///C:/Users/alisson/Desktop/Plataforma/MODELOS DCUMENTOS OMIF 2024.pdf";
+    material.href = "https://site-feira-taupe.vercel.app/MODELOS DCUMENTOS OMIF 2024.pdf";
     material.download = "MODELOS DCUMENTOS OMIF 2024.pdf";
     
 }
@@ -19,7 +19,7 @@ function Aula2Olimp1(){
     document.getElementById('titleAula').innerHTML = "Aula 2 - Conteúdo tal 2";
     document.getElementById('descript').innerHTML = "lorem ipsum dolor, lorem, lorem, lorem... Sit amet consectetur, labore iste, maiores vero aliquam veniam hic.";
     document.getElementById('autoria').innerHTML = "Professor Beltrano - Intituição Tal2";
-    material.href = "file:///C:/Users/alisson/Desktop/Plataforma/Fungos - ap.pdf";
+    material.href = "https://site-feira-taupe.vercel.app/Fungos - ap.pdf";
     material.download = "Fungos - ap.pdf";
 }
 
